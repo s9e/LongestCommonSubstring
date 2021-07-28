@@ -1,0 +1,24 @@
+{
+	"name": "s9e/longest-common-substring",
+	"type": "library",
+	"description": "Longest common substring generator",
+	"homepage": "https://github.com/s9e/LongestCommonSubstring/",
+	"keywords": ["lcs"],
+	"license": "MIT",
+	"require": {
+		"php": ">=8.0"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"s9e\\LongestCommonSubstring\\": "src"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"s9e\\LongestCommonSubstring\\Tests\\": "tests"
+		}
+	}
+}
