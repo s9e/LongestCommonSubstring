@@ -41,6 +41,10 @@ class LongestCommonSubstringTest extends TestCase
 				''
 			],
 			[
+				['', ''],
+				''
+			],
+			[
 				['foo', 'bar'],
 				''
 			],
