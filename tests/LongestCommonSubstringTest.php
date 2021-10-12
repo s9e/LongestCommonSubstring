@@ -64,6 +64,10 @@ class LongestCommonSubstringTest extends TestCase
 				['bbbaaa', 'aaabbb', 'bbbxaaa', 'aaaxbbb'],
 				'aaa'
 			],
+			[
+				['axxxa', 'bxxxb'],
+				'xxx'
+			],
 		];
 	}
 }
