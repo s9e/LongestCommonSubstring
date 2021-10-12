@@ -7,6 +7,7 @@
 */
 namespace s9e\LongestCommonSubstring;
 
+use const SORT_STRING;
 use function array_shift, array_unique, sort, str_contains, strlen, substr, usort;
 
 class LongestCommonSubstring
@@ -53,7 +54,7 @@ class LongestCommonSubstring
 		while (--$pos >= 0);
 
 		$substrings = array_unique($substrings);
-		sort($substrings);
+		sort($substrings, SORT_STRING);
 
 		return $substrings;
 	}
