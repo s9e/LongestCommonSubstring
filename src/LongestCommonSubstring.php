@@ -2,7 +2,7 @@
 
 /**
 * @package   s9e\LongestCommonSubstring
-* @copyright Copyright (c) 2021 The s9e authors
+* @copyright Copyright (c) 2021-2022 The s9e authors
 * @license   http://www.opensource.org/licenses/mit-license.php The MIT License
 */
 namespace s9e\LongestCommonSubstring;
@@ -20,7 +20,9 @@ class LongestCommonSubstring
 	*/
 	public function get(array $strings): string
 	{
-		$this->sortStringsByLength($strings);
+		// Sort strings by ascending length. Iterating through the shortest strings first increases
+		// the chances of failing early on
+		usort($strings, fn(string $a, string $b): int => strlen($a) - strlen($b));
 
 		$string = array_shift($strings) ?? '';
 		$len    = strlen($string);
@@ -57,23 +59,6 @@ class LongestCommonSubstring
 		sort($substrings, SORT_STRING);
 
 		return $substrings;
-	}
-
-	/**
-	* Sort given list of strings by ascending length, in-place
-	*
-	* Iterating through the input in ascending order increases the chances of failing early on
-	* the shortest strings
-	*/
-	protected function sortStringsByLength(array &$strings): void
-	{
-		usort(
-			$strings,
-			function (string $a, string $b): int
-			{
-				return strlen($a) - strlen($b);
-			}
-		);
 	}
 
 	/**
