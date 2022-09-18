@@ -2,8 +2,8 @@
 
 /**
 * @package   s9e\LongestCommonSubstring
-* @copyright Copyright (c) 2021 The s9e authors
-* @license   http://www.opensource.org/licenses/mit-license.php The MIT License
+* @copyright Copyright (c) 2021-2022 The s9e authors
+* @license   https://opensource.org/licenses/mit-license.php The MIT License
 */
 namespace s9e\LongestCommonSubstring\Tests;
 
