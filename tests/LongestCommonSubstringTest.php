@@ -2,7 +2,7 @@
 
 /**
 * @package   s9e\LongestCommonSubstring
-* @copyright Copyright (c) 2021-2022 The s9e authors
+* @copyright Copyright (c) The s9e authors
 * @license   https://opensource.org/licenses/mit-license.php The MIT License
 */
 namespace s9e\LongestCommonSubstring\Tests;
