@@ -1,26 +1,24 @@
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd"
-         bootstrap="vendor/autoload.php"
-         backupGlobals="false"
-         backupStaticAttributes="false"
-         beStrictAboutCoversAnnotation="true"
+<?xml version="1.0"?>
+<phpunit backupGlobals="false"
+         backupStaticProperties="false"
+         beStrictAboutCoverageMetadata="true"
          beStrictAboutOutputDuringTests="true"
          beStrictAboutTestsThatDoNotTestAnything="true"
-         beStrictAboutTodoAnnotatedTests="true"
+         bootstrap="vendor/autoload.php"
+         cacheDirectory=".phpunit.cache"
          colors="true"
-         convertErrorsToExceptions="true"
-         convertNoticesToExceptions="true"
-         convertWarningsToExceptions="true"
          processIsolation="false"
          stopOnError="false"
          stopOnFailure="false"
-         verbose="true">
-    <testsuite name="LongestCommonSubstring">
-        <directory suffix="Test.php">tests</directory>
-    </testsuite>
-    <coverage processUncoveredFiles="true">
-        <include>
-            <directory suffix=".php">src</directory>
-        </include>
-    </coverage>
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.4/phpunit.xsd">
+	<testsuite name="LongestCommonSubstring">
+		<directory suffix="Test.php">tests</directory>
+	</testsuite>
+	<coverage/>
+	<source>
+		<include>
+			<directory suffix=".php">src</directory>
+		</include>
+	</source>
 </phpunit>

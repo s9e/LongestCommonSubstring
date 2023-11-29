@@ -7,14 +7,13 @@
 */
 namespace s9e\LongestCommonSubstring\Tests;
 
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use s9e\LongestCommonSubstring\LongestCommonSubstring;
 
 class LongestCommonSubstringTest extends TestCase
 {
-	/**
-	* @dataProvider getTestCases
-	*/
+	#[DataProvider('getTestCases')]
 	public function test(array $strings, $expected)
 	{
 		$lcs    = new LongestCommonSubstring;
@@ -29,7 +28,7 @@ class LongestCommonSubstringTest extends TestCase
 		$this->assertEquals($expected, $actual);
 	}
 
-	public function getTestCases()
+	public static function getTestCases()
 	{
 		return [
 			[
